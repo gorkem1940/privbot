@@ -15,7 +15,7 @@ module.exports.run = async(client, message, args) => {
    
     let kilitle = new Discord.MessageEmbed()
     .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-    .setDescription('Kanal kilitlendi!')
+    .setDescription('Kanal başarıyla kilitlendi.')
     .setColor('#7289DA')
     permObjesi["SEND_MESSAGES"] = false;
     message.channel.createOverwrite(everyone, permObjesi);
@@ -23,7 +23,7 @@ module.exports.run = async(client, message, args) => {
   } else {
     let kilit = new Discord.MessageEmbed()
     .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-    .setDescription('Kanal kilidi açıldı!')
+    .setDescription('Kanal kilidi başarıyla açıldı.')
     .setColor('#7289DA')
     permObjesi["SEND_MESSAGES"] = null;
     message.channel.createOverwrite(everyone, permObjesi);
