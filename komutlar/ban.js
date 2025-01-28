@@ -29,7 +29,7 @@ if(member.roles.highest.position >= message.member.roles.highest.position) retur
       • Sebebi: \`${reason}\`
       • Kanal: \`${message.channel.name}\`
         `)
-        .setFooter(`Tanrısız Ban Sistemi || Arkadaş Sunucu Dışına Gönderilmiştir ^^`)
+        .setFooter(`Görkem Ban Sistemi || Arkadaş Sunucu Dışına Gönderilmiştir ^^`)
         message.channel.send(embed)
         message.react('✅')
 
@@ -42,8 +42,8 @@ if(member.roles.highest.position >= message.member.roles.highest.position) retur
       • Sebebi: \`${reason}\`
       • Kanal: \`${message.channel.name}\`
         `)
-        .setFooter(`Tanrısız Ban Log`)
-       client.channels.cache.get('1007928691759792128').send(Tanrısızlog)
+        .setFooter(`Görkem Ban Log`)
+       client.channels.cache.get('1007928691759792128').send(Gorkemlog)
   
 
 };
